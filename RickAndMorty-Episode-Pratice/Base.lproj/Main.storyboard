@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tdZ-Sl-Jk3">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Episode-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EpisodeViewController" customModule="RickAndMorty_Episode_Pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-29-ktR">
+                                <rect key="frame" x="0.0" y="191" width="414" height="622"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mzU-pI-QeA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="u8w-2M-sGD"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMe-hH-V0v">
+                                <rect key="frame" x="106" y="83" width="229" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PMe-hH-V0v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="CCQ-gb-wb3"/>
+                            <constraint firstItem="jzD-29-ktR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GLk-Ha-0Gh"/>
+                            <constraint firstItem="jzD-29-ktR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="JDw-xL-3Cp"/>
+                            <constraint firstItem="PMe-hH-V0v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="LlJ-AP-XBT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PMe-hH-V0v" secondAttribute="trailing" constant="79" id="ZGs-Sq-dNx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jzD-29-ktR" secondAttribute="trailing" id="eGD-q8-3S5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jzD-29-ktR" secondAttribute="bottom" id="st7-3T-3HP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Episode" image="open-book" selectedImage="open-book" springLoaded="YES" id="mLL-wJ-QQq"/>
+                    <connections>
+                        <outlet property="tableView" destination="jzD-29-ktR" id="rsb-a2-egE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="107.8125"/>
+        </scene>
+        <!--Characters-->
+        <scene sceneID="u9A-vb-JCW">
+            <objects>
+                <viewController id="zGl-sn-wWO" customClass="CharacterViewController" customModule="RickAndMorty_Episode_Pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ySb-hi-ARv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g6V-9O-v5a">
+                                <rect key="frame" x="0.0" y="196" width="414" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zGl-sn-wWO" id="ZzZ-kj-xmb"/>
+                                    <outlet property="delegate" destination="zGl-sn-wWO" id="XcD-1a-YQZ"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0m-OX-EWd">
+                                <rect key="frame" x="88" y="80" width="238" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f0m-OX-EWd" firstAttribute="leading" secondItem="HeH-kS-2F5" secondAttribute="leading" constant="88" id="7bR-3S-BfI"/>
+                            <constraint firstItem="f0m-OX-EWd" firstAttribute="top" secondItem="HeH-kS-2F5" secondAttribute="top" constant="36" id="7eV-Xt-8Su"/>
+                            <constraint firstItem="g6V-9O-v5a" firstAttribute="leading" secondItem="HeH-kS-2F5" secondAttribute="leading" id="Png-vP-aJS"/>
+                            <constraint firstItem="HeH-kS-2F5" firstAttribute="trailing" secondItem="f0m-OX-EWd" secondAttribute="trailing" constant="88" id="VID-WE-WN9"/>
+                            <constraint firstItem="HeH-kS-2F5" firstAttribute="bottom" secondItem="g6V-9O-v5a" secondAttribute="bottom" id="biv-f1-rQK"/>
+                            <constraint firstItem="HeH-kS-2F5" firstAttribute="trailing" secondItem="g6V-9O-v5a" secondAttribute="trailing" id="uoa-vs-Qxi"/>
+                            <constraint firstItem="g6V-9O-v5a" firstAttribute="top" secondItem="HeH-kS-2F5" secondAttribute="top" constant="152" id="wPg-Wd-llH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HeH-kS-2F5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Characters" image="smiling-emoticon-square-face" selectedImage="smiling-emoticon-square-face" id="YCX-lQ-KO8"/>
+                    <connections>
+                        <outlet property="tableView" destination="g6V-9O-v5a" id="iAR-9I-1wN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wet-nZ-3hR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2800" y="107.8125"/>
+        </scene>
+        <!--Locations-->
+        <scene sceneID="c8N-Ue-94a">
+            <objects>
+                <viewController id="b70-Wj-eJO" customClass="LocationViewController" customModule="RickAndMorty_Episode_Pratice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gbN-hZ-BRn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RDt-QA-gPi">
+                                <rect key="frame" x="0.0" y="193" width="414" height="620"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="b70-Wj-eJO" id="e7S-Es-edL"/>
+                                    <outlet property="delegate" destination="b70-Wj-eJO" id="tuX-KH-Yff"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpP-Fa-9iQ">
+                                <rect key="frame" x="88" y="81" width="238" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cpP-Fa-9iQ" firstAttribute="top" secondItem="Szl-bn-SM2" secondAttribute="top" constant="37" id="372-DV-7f6"/>
+                            <constraint firstItem="RDt-QA-gPi" firstAttribute="top" secondItem="Szl-bn-SM2" secondAttribute="top" constant="149" id="3pW-aU-cL9"/>
+                            <constraint firstItem="Szl-bn-SM2" firstAttribute="trailing" secondItem="cpP-Fa-9iQ" secondAttribute="trailing" constant="88" id="6PR-tJ-lzl"/>
+                            <constraint firstItem="Szl-bn-SM2" firstAttribute="bottom" secondItem="RDt-QA-gPi" secondAttribute="bottom" id="7hi-sQ-lFf"/>
+                            <constraint firstItem="cpP-Fa-9iQ" firstAttribute="leading" secondItem="Szl-bn-SM2" secondAttribute="leading" constant="88" id="OLB-ng-OBi"/>
+                            <constraint firstItem="RDt-QA-gPi" firstAttribute="leading" secondItem="Szl-bn-SM2" secondAttribute="leading" id="iIi-mu-7KX"/>
+                            <constraint firstItem="Szl-bn-SM2" firstAttribute="trailing" secondItem="RDt-QA-gPi" secondAttribute="trailing" id="sRJ-gB-uW9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Szl-bn-SM2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Locations" image="location-pointer" selectedImage="location-pointer" id="Q11-vd-HKk"/>
+                    <connections>
+                        <outlet property="tableView" destination="RDt-QA-gPi" id="PgG-US-eOm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0c-z3-slI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3613.04347826087" y="107.8125"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tBq-9v-sKB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tdZ-Sl-Jk3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oJu-cd-tyj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="NR0-FD-fxg"/>
+                        <segue destination="zGl-sn-wWO" kind="relationship" relationship="viewControllers" id="92x-ro-ZMh"/>
+                        <segue destination="b70-Wj-eJO" kind="relationship" relationship="viewControllers" id="SuM-Bt-H9g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSJ-Hv-VnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location-pointer" width="24" height="24"/>
+        <image name="open-book" width="24" height="24"/>
+        <image name="smiling-emoticon-square-face" width="24" height="24"/>
+    </resources>
+</document>
